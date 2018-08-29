@@ -1,5 +1,5 @@
 # ios-collectionView-customLayout
-Collection View customise layout
+Collection View layout customization
 
 ### Download Manager
 ### Image Caching
