@@ -19,7 +19,7 @@
 		6D987FF1206A498F00AC2117 /* MylivnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D987FF0206A498F00AC2117 /* MylivnModel.swift */; };
 		6D987FF4206A52B200AC2117 /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D987FF3206A52B200AC2117 /* DataHelper.swift */; };
 		6D987FF6206A599E00AC2117 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D987FF5206A599E00AC2117 /* DownloadManager.swift */; };
-		6D987FF8206A731500AC2117 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D987FF7206A731500AC2117 /* UIImageView+Extension.swift */; };
+		6D987FF8206A731500AC2117 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D987FF7206A731500AC2117 /* CustomImageView.swift */; };
 		6DB502072075F51D00EBC860 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB502062075F51D00EBC860 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +38,7 @@
 		6D987FF0206A498F00AC2117 /* MylivnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MylivnModel.swift; sourceTree = "<group>"; };
 		6D987FF3206A52B200AC2117 /* DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
 		6D987FF5206A599E00AC2117 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
-		6D987FF7206A731500AC2117 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		6D987FF7206A731500AC2117 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		6DB502062075F51D00EBC860 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,7 +133,7 @@
 		6D987FED206A475200AC2117 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				6D987FF7206A731500AC2117 /* UIImageView+Extension.swift */,
+				6D987FF7206A731500AC2117 /* CustomImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -222,7 +222,7 @@
 			files = (
 				6D987FF1206A498F00AC2117 /* MylivnModel.swift in Sources */,
 				6D987FE22068FC2400AC2117 /* MainCollectionViewController.swift in Sources */,
-				6D987FF8206A731500AC2117 /* UIImageView+Extension.swift in Sources */,
+				6D987FF8206A731500AC2117 /* CustomImageView.swift in Sources */,
 				6DB502072075F51D00EBC860 /* AppColors.swift in Sources */,
 				6D987FE4206900A600AC2117 /* MylivnCell.swift in Sources */,
 				6D987FF4206A52B200AC2117 /* DataHelper.swift in Sources */,

@@ -25,8 +25,8 @@ class MylivnCell: UICollectionViewCell {
     // MARK: - member variables
     weak var delegate: MylivnCellDelegate?
     
-    let imageView: UIImageView = {
-        let iv = UIImageView()
+    let imageView: CustomImageView = {
+        let iv = CustomImageView()
         iv.image = UIImage(named: "ios-application-placeholder")?.withRenderingMode(.alwaysTemplate)
         iv.contentMode = .scaleAspectFill
 //        iv.layer.cornerRadius = 16

@@ -1,5 +1,5 @@
 //
-//  UIImageView+Extension.swift
+//  CustomImageView.swift
 //  Mylivn
 //
 //  Created by Karthik Kumar on 27/03/18.
@@ -9,7 +9,10 @@
 import UIKit
 
 // MARK: - UIImageView perform load image
-extension UIImageView {
+class CustomImageView: UIImageView {
+    
+    private var currentURL: String!
+    
     func loadImage(url: String, completion: @escaping () -> ()) {
 
         guard let url = URL(string: url) else {
@@ -18,11 +21,15 @@ extension UIImageView {
             return
         }
         
+        currentURL = url.absoluteString
+        
         DownloadManager.shared.loadImage(url: url, completion: { [weak self] (image) in
             if let image = image {
-                DispatchQueue.main.async {
-                    self?.image = image
-                    completion()
+                if self?.currentURL == url.absoluteString {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                        completion()
+                    }
                 }
             } else {
                 self?.updateErrorImage(completion: completion)
