@@ -1,6 +1,35 @@
 # ios-collectionView-customLayout
 Collection View layout customization
 
+customize navigation bar
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey:     Any]?) -> Bool {
+        // Override point for customization after application launch.
+        
+        // customize navigation bar
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().barTintColor = AppColors.theme.getColor()
+        UINavigationBar.appearance().isTranslucent = true
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        
+        // customize status bar
+        UIApplication.shared.statusBarStyle = .lightContent
+        
+        // customize table view
+        UITableView.appearance().separatorColor = AppColors.theme.getColor()
+        
+        // get window
+        let layout  = MylivnLayout()
+        let vc = MainCollectionViewController(collectionViewLayout: layout)
+        layout.delegate = vc
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = UINavigationController(rootViewController: vc)
+        window?.makeKeyAndVisible()
+        
+        return true
+    }
+
 ### Download Manager
 ### Image Caching
 ### Wiggle Animation
